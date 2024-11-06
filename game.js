@@ -3,7 +3,7 @@ import { generateRandomNumber } from "./js/generateRandomNumber.js";
 import { getPlayerGuess } from "./js/getPlayerGuess.js";
 
 function game() {
-    // Step 1: Initialize the game
+
     const generatedNumber = generateRandomNumber(1, 100);
     let attempts = 0;
     const maxAttempts = 10;
