@@ -22,6 +22,7 @@ function game() {
 
         if (isNaN(playerNumber)) {
             alert("Enter the passcode quickly, the terminators are coming!");
+            console.log("Enter the passcode quickly, the terminators are coming!");
             continue;
         }
 
@@ -32,19 +33,25 @@ function game() {
         const result = checkGuess(playerNumber, generatedNumber);
         if (result === "Too Low") {
             alert(`Too Low! The AI is still secure.👾hurry up he's coming. Attempts left until he gets our location: ${maxAttempts - attempts}`);
+            console.log(`Too Low! The AI is still secure.👾hurry up he's coming. Attempts left until he gets our location: ${maxAttempts - attempts}`);
             score -= 10;
         } else if (result === "Too High") {
             alert(`Too High! The AI is still secure.😹Hurrrrrryyyyyyyyyy😹 Attempts left until he gets our location: ${maxAttempts - attempts}`);
+            console.log(`Too High! The AI is still secure.😹Hurrrrrryyyyyyyyyy😹 Attempts left until he gets our location: ${maxAttempts - attempts}`);
             score -= 10;
         } else {
             alert(`Correct! You've hacked the AI network in ${attempts} attempts.`);
             alert(`Your score is: ${score}`);
+            console.log(`Correct! You've hacked the AI network in ${attempts} attempts.`);
+            console.log(`Your score is: ${score}`);
             return;
         }
        
         if (attempts === maxAttempts) {
-            alert("Game Over! You've reached the maximum number of attempts.");
+            alert("☠️Game Over! The terminator got you. we are doomed☠️.");
             alert(`The correct passcode was: ${generatedNumber}`);
+            console.log("Game Over! he terminator got you. we are doomed.");
+            console.log(`The correct passcode was: ${generatedNumber}`);
             return;
         }
     }
