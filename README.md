@@ -9,3 +9,8 @@
 7. if the number of attemts is 10 - show the player that the game is over, he has reached the max number of attemts and exit the program
 
 - bonus: in 1 step initialize the score (integer). decrease it in case of "Too Low" or "Too High" result.
+
+# Storyline
+- The evil AI Branko has taken over the world. Elon was right!
+- You are our last hope. Hack the AI network, its passcode is between 1 to 100.
+- You have 10 attempts to hack the AI network. Good luck!

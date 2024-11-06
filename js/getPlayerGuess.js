@@ -2,7 +2,7 @@
 // input as an integer. Ensure the function handles invalid input
 // and reprompts the user until they provide a valid number.
 
-function getPlayerGuess() {
+export function getPlayerGuess() {
   let guess;
   while (true) {
     guess = parseInt(prompt("Enter your guess (1-100):"));
