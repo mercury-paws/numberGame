@@ -20,6 +20,13 @@ function game() {
       
         const playerNumber = getPlayerGuess();
 
+
+        if (playerNumber === null) {
+            alert("You canceled the game. Goodbye!\nPlease Refresh the Page to Play Again.");
+            console.log("Game canceled by the player.");
+            return;
+        }
+
         if (isNaN(playerNumber)) {
             alert("Enter the passcode quickly, the terminators are coming!");
             console.log("Enter the passcode quickly, the terminators are coming!");
