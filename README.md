@@ -1,5 +1,7 @@
 # numberGame Algorithm
 
+ReviewLink: https://mercury-paws.github.io/numberGame/
+
 1. game is initialized with the generating the random number between 1 and 100(once), attempts counter and max number of attemts - 10.
 2. game requests the player to enter the number
 3. the player's number is received. The number of attempts is increased by adding 1 to the existing number of attempts. The player's number is compared with the generated number. The result can be "Too Low", "Too High", "Correct"
